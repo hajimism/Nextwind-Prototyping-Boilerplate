@@ -1,8 +1,11 @@
 {
+  "parser": "@typescript-eslint/parser",
   "extends": [
-    // "unused-imports",
+    "eslint:recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
-    "plugin:tailwindcss/recommended"
+    "prettier"
   ],
   "plugins": ["unused-imports"],
   "rules": {
