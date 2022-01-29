@@ -2,7 +2,7 @@ import { VFC } from "react";
 
 import { ExLink } from "@/components/ui/ExLink";
 
-import { UserProps, UserListProps } from "@/types";
+import { UserProps, UserListProps } from "@/types/User";
 
 const UserTableItem: VFC<UserProps> = ({ user }) => {
   const { id, name, gitHubUserName } = user;
