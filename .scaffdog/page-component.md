@@ -4,7 +4,7 @@ root: "."
 output: "**/*"
 ignore: []
 questions:
-  name: "Please enter page name"
+  name: "Please enter component name"
 ---
 
 # `src/components/page/{{ inputs.name | pascal }}/index.ts`
