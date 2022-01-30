@@ -23,8 +23,6 @@ export interface {{ inputs.name | pascal }}ListProps {
 }
 ```
 
-# `src/components/model/{{ inputs.name | pascal }}`
-
 # `src/mocks/{{ inputs.name | pascal }}.ts`
 
 ```ts
