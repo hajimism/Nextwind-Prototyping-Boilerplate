@@ -1,16 +1,17 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import React from "react";
 
-import { Top } from "./Top";
+import { TopPageView } from "./View";
 
 export default {
   title: "Page/Top",
-  component: Top,
+  component: TopPageView,
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} as ComponentMeta<typeof Top>;
+} as ComponentMeta<typeof TopPageView>;
 
-const Template: ComponentStory<typeof Top> = (args) => <Top {...args} />;
+const Template: ComponentStory<typeof TopPageView> = (args) => (
+  <TopPageView {...args} />
+);
 
 export const Default = Template.bind({});
