@@ -69,8 +69,8 @@ yarn sb
 
 ### Scaffdog
 
-This document explain the usage of scaffdog in this project.
-These command are already set, but you can freely customize. See [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
+Scaffdog help us by generaing a template of project folder.
+I already set some commands and the following is a description of those commands. See also [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
 
 **Create a new model**
 
