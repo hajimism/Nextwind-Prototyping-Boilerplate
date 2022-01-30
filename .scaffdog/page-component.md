@@ -12,7 +12,6 @@ questions:
 ```ts
 import { {{ inputs.name | pascal }}Page } from "./Page";
 export default {{ inputs.name | pascal }}Page;
-
 ```
 
 # `src/components/page/{{ inputs.name | pascal }}/Page.tsx`
@@ -40,7 +39,6 @@ export const {{ inputs.name | pascal }}Page: NextPage = () => {
     </>
   );
 };
-
 ```
 
 # `src/components/page/{{ inputs.name | pascal }}/View.tsx`

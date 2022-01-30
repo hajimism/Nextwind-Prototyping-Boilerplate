@@ -19,7 +19,6 @@ interface {{ inputs.name | pascal }}Props {
 export const {{ inputs.name | pascal }}: FC<{{ inputs.name | pascal }}Props> = ({ children, className }) => {
   return <div className={className}>{children}</div>;
 };
-
 ```
 
 # `src/components/ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.stories.tsx`
