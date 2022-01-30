@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextwind Prototyping Boilerplate
 
-## Getting Started
+A boilerplate for prototyping with Next.js & Tailwind CSS, which would save your time a lot!
 
-First, run the development server:
+This project is made with...
 
-```bash
-npm run dev
-# or
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Storybook
+- husy & lint-staged
+- scaffdog
+
+## Sammary of Strength
+
+- Tailwind & Storybook are already set!
+- Nicely structured folders, which would be familier with OOUI prototyping
+- Useful ESlint plugins and rules
+  - Tailwind className sort
+  - import order
+  - unused import deletion
+- pre-commit hook is also set!
+- Scaffdog generates a nice component folder template!
+
+## Usage
+
+You can quickly start development with these commands.
+
+```zsh
+# package install
+yarn
+
+# start localhost
 yarn dev
+
+# start storybook
+yarn sb
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+I assume this boilerplate being used in OOUI-aware prototyping. So you would develop like this.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Define the type of model (or Object in OOUI) is `@/types` (`@/` means `/src/` here)
+2. Create a mock data that follows the model
+3. Create UI components under `@/components/model`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```zsh
+.
+├── public
+└── src
+    ├── components
+    │   ├── model # components related to models
+    │   ├── page # components which represents page
+    │   └── ui # components indifferent to models
+    ├── mocks # mock data related to models
+    ├── pages
+    │   └── api
+    ├── styles
+    └── types # type definition of models
+```
