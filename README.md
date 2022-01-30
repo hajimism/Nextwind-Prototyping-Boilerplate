@@ -30,7 +30,7 @@ I assume this boilerplate being used in OOUI-aware prototyping. So you would dev
 2. Create a mock data that follows the model
 3. Create UI components under `@/components/model`
 
-And scaffdog will help you a lot. See here!
+And scaffdog will help you a lot. See [here](#scaffdog)!
 
 ```zsh
 .
@@ -93,6 +93,8 @@ Then, scaffdog will ask you some questions. This is an example of creating Stude
 
 ```
 
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/model.md). You can customize this file.
+
 **Create a new component related to model**
 
 When you create a new component related to model, use this command at first.
@@ -116,6 +118,8 @@ Then, scaffdog will ask you some questions. This is an example of creating Stude
 
 
 ```
+
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/model-component.md). You can customize this file.
 
 **Create a new page component**
 
@@ -141,6 +145,8 @@ Then, scaffdog will ask you some questions. This is an example of creating About
 
 ```
 
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/page-component.md). You can customize this file.
+
 **Create a new ui component**
 
 When you create a new component indifferent to model, use this command at first.
@@ -163,3 +169,5 @@ Then, scaffdog will ask you some questions. This is an example of creating Butto
 
 
 ```
+
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/ui-component.md). You can customize this file.
