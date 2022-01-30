@@ -34,6 +34,9 @@ And scaffdog will help you a lot. See here!
 
 ```zsh
 .
+├── .husky
+├── .scaffdog
+├── .storybook
 ├── public
 └── src
     ├── components
