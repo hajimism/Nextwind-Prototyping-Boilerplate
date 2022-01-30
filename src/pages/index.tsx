@@ -1,2 +1,2 @@
-import TopPage from "@/components/page/Top";
+import TopPage from "@/components/page/Top/";
 export default TopPage;

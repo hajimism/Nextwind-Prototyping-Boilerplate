@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* your customization would be here */
 a {
   @apply text-cyan-800 no-underline hover:underline;
 }
