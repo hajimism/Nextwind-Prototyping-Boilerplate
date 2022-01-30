@@ -7,8 +7,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "start-storybook -p 6006",
+    "build-sb": "build-storybook"
   },
   "dependencies": {
     "next": "12.0.9",
