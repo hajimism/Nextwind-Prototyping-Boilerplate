@@ -70,7 +70,7 @@ yarn sb
 ### Scaffdog
 
 This document explain the usage of scaffdog in this project.
-These command are already set, but you can freely customize. See official document of scaffdog.
+These command are already set, but you can freely customize. See [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
 
 **Create a new model**
 
