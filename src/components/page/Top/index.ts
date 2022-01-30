@@ -1,2 +1,2 @@
-import { TopPage } from "./Top.page";
+import { TopPage } from "./Page";
 export default TopPage;
