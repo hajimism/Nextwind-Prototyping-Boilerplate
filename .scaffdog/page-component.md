@@ -7,7 +7,7 @@ questions:
   name: "Please enter page name"
 ---
 
-# `{{ inputs.name | pascal }}/index.ts`
+# `src/components/page/{{ inputs.name | pascal }}/index.ts`
 
 ```ts
 import { {{ inputs.name | pascal }}Page } from "./Page";
@@ -15,7 +15,7 @@ export default {{ inputs.name | pascal }}Page;
 
 ```
 
-# `{{ inputs.name | pascal }}/Page.tsx`
+# `src/components/page/{{ inputs.name | pascal }}/Page.tsx`
 
 ```tsx
 import Head from "next/head";
@@ -43,7 +43,7 @@ export const {{ inputs.name | pascal }}Page: NextPage = () => {
 
 ```
 
-# `{{ inputs.name | pascal }}/View.tsx`
+# `src/components/page/{{ inputs.name | pascal }}/View.tsx`
 
 ```tsx
 import type { VFC } from "react";
@@ -57,7 +57,7 @@ export const {{ inputs.name | pascal }}PageView: VFC = () => {
 };
 ```
 
-# `{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.stories.tsx`
+# `src/components/page/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.stories.tsx`
 
 ```tsx
 import { ComponentStory, ComponentMeta } from "@storybook/react";

@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
 
-import { ExLink } from "./ExLink";
+import { ExLink } from "./index";
 
 export default {
   title: "UI/ExLink",
