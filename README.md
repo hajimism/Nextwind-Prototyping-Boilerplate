@@ -83,8 +83,8 @@ npx scaffdog generate model
 Then, scaffdog will ask you some questions. This is an example of creating Student model.
 
 ```zsh
-? Please select the output destination directory. . # choose root(.)
-? Please enter model name student #enter model name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Please enter model name student # Enter model name. Multiple words are also fine.
 
 🐶 Generated 2 files!
 
@@ -106,9 +106,9 @@ npx scaffdog generate model-component
 Then, scaffdog will ask you some questions. This is an example of creating Student List Component, which is related to Student model.
 
 ```zsh
-? Please select the output destination directory. . # choose root(.)
-? Which model? student # enter model name. Multiple words are also fine.
-? Plese enter component name student list # enter component name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Which model? student # Enter model name. Multiple words are also fine.
+? Plese enter component name student list # Enter component name. Multiple words are also fine.
 
 🐶 Generated 3 files!
 
@@ -132,8 +132,8 @@ npx scaffdog generate page-component
 Then, scaffdog will ask you some questions. This is an example of creating About page component.
 
 ```zsh
-? Please select the output destination directory. . # choose root(.)
-? Please enter component name about # enter component name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Please enter component name about # Enter component name. Multiple words are also fine.
 
 🐶 Generated 4 files!
 
@@ -159,8 +159,8 @@ Then, scaffdog will ask you some questions. This is an example of creating Butto
 
 ```zsh
 
-? Please select the output destination directory. . # choose root(.)
-? Please enter component name button #enter component name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Please enter component name button # Enter component name. Multiple words are also fine.
 
 🐶 Generated 2 files!
 
