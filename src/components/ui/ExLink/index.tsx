@@ -7,7 +7,12 @@ interface ExLinkProps {
 
 export const ExLink: FC<ExLinkProps> = ({ href, children, className }) => {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className={className}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={` text-cyan-800 no-underline hover:underline ${className}`}
+    >
       {children}
     </a>
   );
