@@ -30,7 +30,7 @@ I assume this boilerplate being used in OOUI-aware prototyping. So you would dev
 2. Create a mock data that follows the model
 3. Create UI components under `@/components/model`
 
-And scaffdog will help you a lot. See here!
+And scaffdog will help you a lot. See [here](#scaffdog)!
 
 ```zsh
 .
@@ -69,8 +69,8 @@ yarn sb
 
 ### Scaffdog
 
-This document explain the usage of scaffdog in this project.
-These command are already set, but you can freely customize. See official document of scaffdog.
+Scaffdog help us by generaing a template of project folder.
+I already set some commands and the following is a description of those commands. See also [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
 
 **Create a new model**
 
@@ -83,8 +83,8 @@ npx scaffdog generate model
 Then, scaffdog will ask you some questions. This is an example of creating Student model.
 
 ```zsh
-? Please select the output destination directory. . # choose root(.)
-? Please enter model name student #enter model name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Please enter model name student # Enter model name. Multiple words are also fine.
 
 🐶 Generated 2 files!
 
@@ -92,6 +92,8 @@ Then, scaffdog will ask you some questions. This is an example of creating Stude
      ✔ src/mocks/Student.ts
 
 ```
+
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/model.md). You can customize this file.
 
 **Create a new component related to model**
 
@@ -104,9 +106,9 @@ npx scaffdog generate model-component
 Then, scaffdog will ask you some questions. This is an example of creating Student List Component, which is related to Student model.
 
 ```zsh
-? Please select the output destination directory. . # choose root(.)
-? Which model? student # enter model name. Multiple words are also fine.
-? Plese enter component name student list # enter component name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Which model? student # Enter model name. Multiple words are also fine.
+? Plese enter component name student list # Enter component name. Multiple words are also fine.
 
 🐶 Generated 3 files!
 
@@ -116,6 +118,8 @@ Then, scaffdog will ask you some questions. This is an example of creating Stude
 
 
 ```
+
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/model-component.md). You can customize this file.
 
 **Create a new page component**
 
@@ -128,8 +132,8 @@ npx scaffdog generate page-component
 Then, scaffdog will ask you some questions. This is an example of creating About page component.
 
 ```zsh
-? Please select the output destination directory. . # choose root(.)
-? Please enter component name about # enter component name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Please enter component name about # Enter component name. Multiple words are also fine.
 
 🐶 Generated 4 files!
 
@@ -140,6 +144,8 @@ Then, scaffdog will ask you some questions. This is an example of creating About
 
 
 ```
+
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/page-component.md). You can customize this file.
 
 **Create a new ui component**
 
@@ -153,8 +159,8 @@ Then, scaffdog will ask you some questions. This is an example of creating Butto
 
 ```zsh
 
-? Please select the output destination directory. . # choose root(.)
-? Please enter component name button #enter component name. Multiple words are also fine.
+? Please select the output destination directory. . # Choose root(.)
+? Please enter component name button # Enter component name. Multiple words are also fine.
 
 🐶 Generated 2 files!
 
@@ -163,3 +169,5 @@ Then, scaffdog will ask you some questions. This is an example of creating Butto
 
 
 ```
+
+The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/ui-component.md). You can customize this file.
