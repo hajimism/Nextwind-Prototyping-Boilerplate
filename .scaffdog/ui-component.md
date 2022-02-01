@@ -37,8 +37,32 @@ export default {
   },
 } as ComponentMeta<typeof {{ inputs.name | pascal }}>;
 
-const Template: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => <{{ inputs.name | pascal }} {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {};
+const Small: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => (
+  <div className="max-w-sm">
+    <{{ inputs.name | pascal }} {...args} />
+  </div>
+);
+
+const Medium: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => (
+  <div className="max-w-md">
+    <{{ inputs.name | pascal }} {...args} />
+  </div>
+);
+
+const Large: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => (
+  <div className="max-w-6xl">
+    <{{ inputs.name | pascal }} {...args} />
+  </div>
+);
+
+export const Mobile = Small.bind({});
+Mobile.args = {};
+
+export const Tablet = Medium.bind({});
+Tablet.args = {};
+
+export const Desktop = Large.bind({});
+Desktop.args = {};
+
 ```

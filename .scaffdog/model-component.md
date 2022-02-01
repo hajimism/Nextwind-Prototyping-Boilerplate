@@ -56,22 +56,71 @@ export default {
 // TODO: You have to delete unnecessary one of SingleProp ver or ListProp ver
 
 // SingleProp ver
-const SinglePropTemplate: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
-  <{{ inputs.component | pascal }} {...args} />
+const Small: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
+  <div className="max-w-sm">
+    <{{ inputs.component | pascal }} {...args} />
+  </div>
 );
 
-export const Default = SinglePropTemplate.bind({});
-Default.args = {
-  {{ inputs.model | camel }}: mock{{ inputs.model | pascal }},
+const Medium: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
+  <div className="max-w-md">
+    <{{ inputs.component | pascal }} {...args} />
+  </div>
+);
+
+const Large: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
+  <div className="max-w-6xl">
+    <{{ inputs.component | pascal }} {...args} />
+  </div>
+);
+
+export const Mobile = Small.bind({});
+Mobile.args = {
+   {{ inputs.component | camel }}: mock{{ inputs.component | pascal }},
 };
 
+export const Tablet = Medium.bind({});
+Tablet.args = {
+   {{ inputs.component | camel }}: mock{{ inputs.component | pascal }},
+};
+
+export const Desktop = Large.bind({});
+Desktop.args = {
+   {{ inputs.component | camel }}: mock{{ inputs.component | pascal }},
+};
+
+
 // ListProp ver
-const ListPropTemplate: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
-  <{{ inputs.component | pascal }} {...args} />
+const Small: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
+  <div className="max-w-sm">
+    <{{ inputs.component | pascal }} {...args} />
+  </div>
 );
 
-export const Default = ListPropTemplate.bind({});
-Default.args = {
-  {{ inputs.model | camel }}s: mock{{ inputs.model | pascal }}List,
+const Medium: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
+  <div className="max-w-md">
+    <{{ inputs.component | pascal }} {...args} />
+  </div>
+);
+
+const Large: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) => (
+  <div className="max-w-6xl">
+    <{{ inputs.component | pascal }} {...args} />
+  </div>
+);
+
+export const Mobile = Small.bind({});
+Mobile.args = {
+   {{ inputs.component | camel }}s: mock{{ inputs.component | pascal }}List,
+};
+
+export const Tablet = Medium.bind({});
+Tablet.args = {
+   {{ inputs.component | camel }}s: mock{{ inputs.component | pascal }}List,
+};
+
+export const Desktop = Large.bind({});
+Desktop.args = {
+   {{ inputs.component | camel }}s: mock{{ inputs.component | pascal }}Lists,
 };
 ```
