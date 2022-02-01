@@ -13,35 +13,11 @@ export default {
   },
 } as ComponentMeta<typeof UserTable>;
 
-const Small: ComponentStory<typeof UserTable> = (args) => (
-  <div className="max-w-sm">
-    <UserTable {...args} />
-  </div>
+const Template: ComponentStory<typeof UserTable> = (args) => (
+  <UserTable {...args} />
 );
 
-const Medium: ComponentStory<typeof UserTable> = (args) => (
-  <div className="max-w-md">
-    <UserTable {...args} />
-  </div>
-);
-
-const Large: ComponentStory<typeof UserTable> = (args) => (
-  <div className="max-w-6xl">
-    <UserTable {...args} />
-  </div>
-);
-
-export const Mobile = Small.bind({});
-Mobile.args = {
-  users: mockUserList,
-};
-
-export const Tablet = Medium.bind({});
-Tablet.args = {
-  users: mockUserList,
-};
-
-export const Desktop = Large.bind({});
-Desktop.args = {
+export const Default = Template.bind({});
+Default.args = {
   users: mockUserList,
 };

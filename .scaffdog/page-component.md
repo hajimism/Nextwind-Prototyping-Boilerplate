@@ -70,31 +70,10 @@ export default {
   },
 } as ComponentMeta<typeof {{ inputs.name | pascal }}PageView>;
 
-const Small: ComponentStory<typeof {{ inputs.name | pascal }}PageView> = (args) => (
-  <div className="max-w-sm">
-    <{{ inputs.name | pascal }}PageView {...args} />
-  </div>
+const Template: ComponentStory<typeof {{ inputs.name | pascal }}PageView> = (args) => (
+  <{{ inputs.name | pascal }}PageView {...args} />
 );
 
-const Medium: ComponentStory<typeof {{ inputs.name | pascal }}PageView> = (args) => (
-  <div className="max-w-md">
-    <{{ inputs.name | pascal }}PageView {...args} />
-  </div>
-);
-
-const Large: ComponentStory<typeof {{ inputs.name | pascal }}PageView> = (args) => (
-  <div className="max-w-6xl">
-    <{{ inputs.name | pascal }}PageView {...args} />
-  </div>
-);
-
-export const Mobile = Small.bind({});
-Mobile.args = {};
-
-export const Tablet = Medium.bind({});
-Tablet.args = {};
-
-export const Desktop = Large.bind({});
-Desktop.args = {};
-
+export const Default = Template.bind({});
+Default.args = {};
 ```

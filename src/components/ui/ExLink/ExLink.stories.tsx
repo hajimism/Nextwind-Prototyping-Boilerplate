@@ -11,38 +11,10 @@ export default {
   },
 } as ComponentMeta<typeof ExLink>;
 
-const Small: ComponentStory<typeof ExLink> = (args) => (
-  <div className="max-w-sm">
-    <ExLink {...args} />
-  </div>
-);
+const Template: ComponentStory<typeof ExLink> = (args) => <ExLink {...args} />;
 
-const Medium: ComponentStory<typeof ExLink> = (args) => (
-  <div className="max-w-md">
-    <ExLink {...args} />
-  </div>
-);
-
-const Large: ComponentStory<typeof ExLink> = (args) => (
-  <div className="max-w-6xl">
-    <ExLink {...args} />
-  </div>
-);
-
-export const Mobile = Small.bind({});
-Mobile.args = {
-  href: "https://github.com/",
-  children: "GitHub",
-};
-
-export const Tablet = Medium.bind({});
-Tablet.args = {
-  href: "https://github.com/",
-  children: "GitHub",
-};
-
-export const Desktop = Large.bind({});
-Desktop.args = {
+export const Default = Template.bind({});
+Default.args = {
   href: "https://github.com/",
   children: "GitHub",
 };
