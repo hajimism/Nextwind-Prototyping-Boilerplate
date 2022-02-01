@@ -11,16 +11,22 @@ This project is made with...
 - husky & lint-staged
 - scaffdog
 
+These are demo sites.
+
+- [App](https://nextwind-prototyping-boilerplate.vercel.app/)
+- [Storybook](https://61f8f16f224018003f2121c3-btiiqbvsyb.chromatic.com/?path=/story/model-user-usertable--desktop)
+
 ## Sammary of Strength
 
 - Tailwind & Storybook are already set!
-- Nicely structured folders, which would be familier with OOUI prototyping
-- Useful ESlint plugins and rules
+- Nicely structured folders, which would be familier with OOUI prototyping.
+- Useful ESlint plugins and rules.
   - Tailwind className sort
   - import order
   - unused import deletion
-- pre-commit hook is also set!
+- Pre-commit hook is also set!
 - Scaffdog generates a nice component folder template!
+- A useful Spacer component is included.
 
 ## Structure
 
