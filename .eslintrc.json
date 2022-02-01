@@ -43,6 +43,16 @@
             "position": "before"
           },
           {
+            "pattern": "@/types/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "@/pages/**",
             "group": "internal",
             "position": "before"
