@@ -14,7 +14,7 @@ This project is made with...
 These are demo sites.
 
 - [App](https://nextwind-prototyping-boilerplate.vercel.app/)
-- [Storybook](https://61f8f16f224018003f2121c3-btiiqbvsyb.chromatic.com/?path=/story/model-user-usertable--desktop)
+- [Storybook](https://61f8f16f224018003f2121c3-nrfgktmbqm.chromatic.com/?path=/story/model-user-usertable--default)
 
 ## Sammary of Strength
 
