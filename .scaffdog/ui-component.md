@@ -23,7 +23,7 @@ export const {{ inputs.name | pascal }}: FC<{{ inputs.name | pascal }}Props> = (
 
 # `src/components/ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.stories.tsx`
 
-````tsx
+```tsx
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
 
@@ -43,5 +43,4 @@ const Template: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {};
-s```
-````
+```
