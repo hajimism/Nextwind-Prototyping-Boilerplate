@@ -6,15 +6,15 @@ import { ExLink } from "@/components/ui/ExLink";
 
 const UserTableItem: VFC<UserProps> = ({ user }) => {
   const { id, name, gitHubUserName } = user;
+  const gitHubUserPage = `https://github.com/${gitHubUserName}`;
+
   return (
     <tr className="whitespace-nowrap">
       <td className="py-4 px-6 text-sm text-gray-500">{id}</td>
       <td className="py-4 px-6">{name}</td>
       <td className="py-4 px-6">
         {gitHubUserName ? (
-          <ExLink href={`https://github.com/${gitHubUserName}`}>
-            {gitHubUserName}
-          </ExLink>
+          <ExLink href={gitHubUserPage}>{gitHubUserName}</ExLink>
         ) : (
           <span className="text-gray-300">{"none"}</span>
         )}
