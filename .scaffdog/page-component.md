@@ -65,9 +65,6 @@ import { {{ inputs.name | pascal }}PageView } from "./View";
 export default {
   title: "Page/{{ inputs.name | pascal }}",
   component: {{ inputs.name | pascal }}PageView,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof {{ inputs.name | pascal }}PageView>;
 
 const Template: ComponentStory<typeof {{ inputs.name | pascal }}PageView> = (args) => (

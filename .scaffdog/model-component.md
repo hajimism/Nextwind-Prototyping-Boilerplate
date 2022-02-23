@@ -48,9 +48,6 @@ import { {{ inputs.component | pascal }} } from "./{{ inputs.component | pascal 
 export default {
   title: "Model/{{ inputs.model | pascal }}/{{ inputs.component | pascal }}",
   component: {{ inputs.component | pascal }},
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof {{ inputs.component | pascal }}>;
 
 // TODO: You have to delete unnecessary one of SingleProp ver or ListProp ver

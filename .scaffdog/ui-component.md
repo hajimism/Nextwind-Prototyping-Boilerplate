@@ -32,9 +32,6 @@ import { {{ inputs.name | pascal }} } from "./index";
 export default {
   title: "UI/{{ inputs.name | pascal }}",
   component: {{ inputs.name | pascal }},
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof {{ inputs.name | pascal }}>;
 
 const Template: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => (
