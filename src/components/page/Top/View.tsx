@@ -1,10 +1,10 @@
-import { VFC } from "react";
+import { VFC } from "react"
 
-import { UserTable } from "@/components/model/User/UserTable";
+import { UserTable } from "@/components/model/User/UserTable"
 
-import { Spacer } from "@/components/ui/Spacer";
+import { Spacer } from "@/components/ui/Spacer"
 
-import { mockUserList } from "@/mocks/User";
+import { mockUserList } from "@/mocks/User"
 
 export const TopPageView: VFC = () => {
   return (
@@ -13,5 +13,5 @@ export const TopPageView: VFC = () => {
       <Spacer size={32} />
       <UserTable users={mockUserList} />
     </main>
-  );
-};
+  )
+}

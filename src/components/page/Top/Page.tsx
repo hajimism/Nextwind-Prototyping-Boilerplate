@@ -1,8 +1,8 @@
-import Head from "next/head";
+import Head from "next/head"
 
-import { TopPageView } from "./View";
+import { TopPageView } from "./View"
 
-import type { NextPage } from "next";
+import type { NextPage } from "next"
 
 export const TopPage: NextPage = () => {
   return (
@@ -18,5 +18,5 @@ export const TopPage: NextPage = () => {
 
       <TopPageView />
     </>
-  );
-};
+  )
+}

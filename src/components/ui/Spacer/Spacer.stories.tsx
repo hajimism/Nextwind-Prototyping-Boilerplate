@@ -1,7 +1,7 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react"
+import React from "react"
 
-import { Spacer } from "./index";
+import { Spacer } from "./index"
 
 export default {
   title: "UI/Spacer",
@@ -9,11 +9,11 @@ export default {
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} as ComponentMeta<typeof Spacer>;
+} as ComponentMeta<typeof Spacer>
 
-const Template: ComponentStory<typeof Spacer> = (args) => <Spacer {...args} />;
+const Template: ComponentStory<typeof Spacer> = (args) => <Spacer {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   size: 36,
-};
+}

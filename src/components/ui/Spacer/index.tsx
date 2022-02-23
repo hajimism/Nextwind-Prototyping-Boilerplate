@@ -1,2 +1,2 @@
-import { Spacer } from "./Spacer";
-export { Spacer };
+import { Spacer } from "./Spacer"
+export { Spacer }

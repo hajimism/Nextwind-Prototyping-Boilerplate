@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -31,7 +31,7 @@ module.exports = {
     config.resolve.alias = {
       ...config.resolve?.alias,
       "@": [path.resolve(__dirname, "../src/"), path.resolve(__dirname, "../")],
-    };
+    }
 
     /**
      * Fixes font import with /
@@ -40,8 +40,8 @@ module.exports = {
     config.resolve.roots = [
       path.resolve(__dirname, "../public"),
       "node_modules",
-    ];
+    ]
 
-    return config;
+    return config
   },
-};
+}

@@ -1,2 +1,2 @@
-import { UserTable } from "./UserTable";
-export { UserTable };
+import { UserTable } from "./UserTable"
+export { UserTable }

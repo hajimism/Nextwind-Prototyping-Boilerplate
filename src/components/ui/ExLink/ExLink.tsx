@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC } from "react"
 
 interface ExLinkProps {
-  href: string;
-  className?: string;
+  href: string
+  className?: string
 }
 
 export const ExLink: FC<ExLinkProps> = ({ href, children, className }) => {
@@ -15,5 +15,5 @@ export const ExLink: FC<ExLinkProps> = ({ href, children, className }) => {
     >
       {children}
     </a>
-  );
-};
+  )
+}

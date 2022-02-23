@@ -1,12 +1,12 @@
-import { VFC } from "react";
+import { VFC } from "react"
 
-import { UserProps, UserListProps } from "@/types/User";
+import { UserProps, UserListProps } from "@/types/User"
 
-import { ExLink } from "@/components/ui/ExLink";
+import { ExLink } from "@/components/ui/ExLink"
 
 const UserTableItem: VFC<UserProps> = ({ user }) => {
-  const { id, name, gitHubUserName } = user;
-  const gitHubUserPage = `https://github.com/${gitHubUserName}`;
+  const { id, name, gitHubUserName } = user
+  const gitHubUserPage = `https://github.com/${gitHubUserName}`
 
   return (
     <tr className="whitespace-nowrap">
@@ -20,8 +20,8 @@ const UserTableItem: VFC<UserProps> = ({ user }) => {
         )}
       </td>
     </tr>
-  );
-};
+  )
+}
 
 export const UserTable: VFC<UserListProps> = ({ users }) => {
   return (
@@ -41,5 +41,5 @@ export const UserTable: VFC<UserListProps> = ({ users }) => {
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
