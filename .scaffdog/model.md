@@ -1,5 +1,5 @@
 ---
-name: "model"
+name: "m"
 root: "."
 output: "**/*"
 ignore: []
@@ -11,26 +11,26 @@ questions:
 
 ```ts
 export type {{ inputs.name | pascal }} = {
-  name: string;
-};
+  name: string
+}
 
 export interface {{ inputs.name | pascal }}Props {
-  {{ inputs.name | camel }}: {{ inputs.name | pascal }};
+  {{ inputs.name | camel }}: {{ inputs.name | pascal }}
 }
 
 export interface {{ inputs.name | pascal }}ListProps {
-  {{ inputs.name | camel }}s: {{ inputs.name | pascal }}[];
+  {{ inputs.name | camel }}s: {{ inputs.name | pascal }}[]
 }
 ```
 
 # `src/mocks/{{ inputs.name | pascal }}.ts`
 
 ```ts
-import { {{ inputs.name | pascal }} } from "@/types/{{ inputs.name | pascal }}";
+import { {{ inputs.name | pascal }} } from "@/types/{{ inputs.name | pascal }}"
 
 export const mock{{ inputs.name | pascal }}: {{ inputs.name | pascal }} = {
   name: "Hajime",
-};
+}
 
-export const mock{{ inputs.name | pascal }}List = [mock{{ inputs.name | pascal }}, mock{{ inputs.name | pascal }}, mock{{ inputs.name | pascal }}];
+export const mock{{ inputs.name | pascal }}List = [mock{{ inputs.name | pascal }}, mock{{ inputs.name | pascal }}, mock{{ inputs.name | pascal }}]
 ```
