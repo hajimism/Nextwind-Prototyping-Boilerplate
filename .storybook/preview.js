@@ -2,6 +2,10 @@ import "../src/styles/globals.css";
 import * as NextImage from "next/image";
 import { addDecorator } from "@storybook/react";
 import { withConsole } from "@storybook/addon-console";
+import { initialize, mswDecorator } from "msw-storybook-addon";
+
+// Initialize MSW
+initialize();
 
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 
@@ -23,4 +27,18 @@ export const parameters = {
   previewTabs: {
     "storybook/docs/panel": { index: -1 },
   },
+  msw: {
+    handlers: [
+      // example
+      rest.get("/hello", (req, res, ctx) => {
+        return res(
+          ctx.json({
+            name: "John Doe",
+          })
+        );
+      }),
+    ],
+  },
 };
+
+export const decorators = [mswDecorator];
