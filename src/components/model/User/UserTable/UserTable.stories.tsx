@@ -8,9 +8,6 @@ import { UserTable } from "./UserTable"
 export default {
   title: "Model/User/UserTable",
   component: UserTable,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof UserTable>
 
 const Template: ComponentStory<typeof UserTable> = (args) => (

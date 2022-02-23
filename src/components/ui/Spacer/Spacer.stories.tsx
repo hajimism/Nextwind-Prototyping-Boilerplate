@@ -6,9 +6,6 @@ import { Spacer } from "./index"
 export default {
   title: "UI/Spacer",
   component: Spacer,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof Spacer>
 
 const Template: ComponentStory<typeof Spacer> = (args) => <Spacer {...args} />

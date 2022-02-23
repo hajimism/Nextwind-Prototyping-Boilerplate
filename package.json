@@ -17,7 +17,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
-    "@storybook/addon-actions": "^6.4.15",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-console": "^1.2.3",
     "@storybook/addon-essentials": "^6.4.15",
     "@storybook/addon-links": "^6.4.15",
     "@storybook/addon-postcss": "^2.0.0",
@@ -38,6 +39,8 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^7.0.4",
     "lint-staged": ">=10",
+    "msw": "^0.38.1",
+    "msw-storybook-addon": "^1.6.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "scaffdog": "^1.2.0",

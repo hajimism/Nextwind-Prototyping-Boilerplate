@@ -6,9 +6,6 @@ import { ExLink } from "./index"
 export default {
   title: "UI/ExLink",
   component: ExLink,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof ExLink>
 
 const Template: ComponentStory<typeof ExLink> = (args) => <ExLink {...args} />
