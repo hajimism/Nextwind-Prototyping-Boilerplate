@@ -1,20 +1,20 @@
-import "../src/styles/globals.css";
-import * as NextImage from "next/image";
-import { addDecorator } from "@storybook/react";
-import { withConsole } from "@storybook/addon-console";
-import { initialize, mswDecorator } from "msw-storybook-addon";
+import "../src/styles/globals.css"
+import * as NextImage from "next/image"
+import { addDecorator } from "@storybook/react"
+import { withConsole } from "@storybook/addon-console"
+import { initialize, mswDecorator } from "msw-storybook-addon"
 
 // Initialize MSW
-initialize();
+initialize()
 
-addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+addDecorator((storyFn, context) => withConsole()(storyFn)(context))
 
-const OriginalNextImage = NextImage.default;
+const OriginalNextImage = NextImage.default
 
 Object.defineProperty(NextImage, "default", {
   configurable: true,
   value: (props) => <OriginalNextImage {...props} unoptimized />,
-});
+})
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -35,10 +35,10 @@ export const parameters = {
           ctx.json({
             name: "John Doe",
           })
-        );
+        )
       }),
     ],
   },
-};
+}
 
-export const decorators = [mswDecorator];
+export const decorators = [mswDecorator]

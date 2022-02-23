@@ -1,5 +1,5 @@
 ---
-name: "ui-component"
+name: "uc"
 root: "."
 output: "**/*"
 ignore: []
@@ -7,27 +7,20 @@ questions:
   name: "Please enter component name"
 ---
 
-# `src/components/ui/{{ inputs.name | pascal }}/index.tsx`
+# `src/components/ui/{{ inputs.name | pascal }}/index.ts`
 
 ```ts
-import { FC } from "react";
-
-interface {{ inputs.name | pascal }}Props {
-  className?: string;
-}
-
-export const {{ inputs.name | pascal }}: FC<{{ inputs.name | pascal }}Props> = ({ children, className }) => {
-  return <div className={className}>{children}</div>;
-};
+import { {{ inputs.name | pascal }} } from "./{{ inputs.name | pascal }}"
+export { {{ inputs.name | pascal }} }
 ```
 
 # `src/components/ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.stories.tsx`
 
 ```tsx
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react"
+import React from "react"
 
-import { {{ inputs.name | pascal }} } from "./index";
+import { {{ inputs.name | pascal }} } from "./index"
 
 export default {
   title: "UI/{{ inputs.name | pascal }}",
@@ -36,8 +29,23 @@ export default {
 
 const Template: ComponentStory<typeof {{ inputs.name | pascal }}> = (args) => (
   <{{ inputs.name | pascal }} {...args} />
-);
+)
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Default = Template.bind({})
+Default.args = {}
+```
+
+# `src/components/ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.tsx`
+
+```tsx
+import { FC } from "react"
+
+interface {{ inputs.name | pascal }}Props {
+  className?: string
+}
+
+export const {{ inputs.name | pascal }}: FC<{{ inputs.name | pascal }}Props> = ({ children, className }) => {
+  return <div className={className}>{children}</div>
+}
+
 ```

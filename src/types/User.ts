@@ -1,13 +1,13 @@
 export type User = {
-  id: number;
-  name: string;
-  gitHubUserName?: string;
-};
+  id: number
+  name: string
+  gitHubUserName?: string
+}
 
 export interface UserProps {
-  user: User;
+  user: User
 }
 
 export interface UserListProps {
-  users: User[];
+  users: User[]
 }
