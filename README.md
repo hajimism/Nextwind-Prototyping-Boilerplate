@@ -83,7 +83,7 @@ I already set some commands and the following is a description of those commands
 When you create a new model, use this command at first.
 
 ```zsh
-npx scaffdog generate model
+npx scaffdog generate m
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Student model.
@@ -103,10 +103,32 @@ The template which would be generated is [here](https://github.com/HajimexxxNaka
 
 **Create a new component related to model**
 
-When you create a new component related to model, use this command at first.
+When you create a new component related to model, and...
+
+① when the component describes single of model, use this command at first.
+```zsh
+npx scaffdog generate mcs
+```
+
+Then, scaffdog will ask you some questions. This is an example of creating Student List Component, which is related to Student model.
 
 ```zsh
-npx scaffdog generate model-component
+? Please select the output destination directory. . # Choose root(.)
+? Which model? student # Enter model name. Multiple words are also fine.
+? Plese enter component name student # Enter component name. Multiple words are also fine.
+
+🐶 Generated 3 files!
+
+     ✔ src/components/model/Student/Student/index.ts
+     ✔ src/components/model/Student/Student/StudentList.tsx
+     ✔ src/components/model/Student/Student/StudentList.stories.tsx
+
+
+```
+
+② when the component describes list of model, use this command at first.
+```zsh
+npx scaffdog generate mcl
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Student List Component, which is related to Student model.
@@ -132,7 +154,7 @@ The template which would be generated is [here](https://github.com/HajimexxxNaka
 When you create a new page component, use this command at first.
 
 ```zsh
-npx scaffdog generate page-component
+npx scaffdog generate pc
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating About page component.
@@ -158,7 +180,7 @@ The template which would be generated is [here](https://github.com/HajimexxxNaka
 When you create a new component indifferent to model, use this command at first.
 
 ```zsh
-npx scaffdog generate ui-component
+npx scaffdog generate uc
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Button component.
