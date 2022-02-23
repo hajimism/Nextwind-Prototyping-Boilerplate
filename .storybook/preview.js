@@ -1,5 +1,9 @@
 import "../src/styles/globals.css";
 import * as NextImage from "next/image";
+import { addDecorator } from "@storybook/react";
+import { withConsole } from "@storybook/addon-console";
+
+addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 
 const OriginalNextImage = NextImage.default;
 
