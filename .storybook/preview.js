@@ -1,8 +1,10 @@
 import "../src/styles/globals.css"
 import * as NextImage from "next/image"
-import { addDecorator } from "@storybook/react"
-import { withConsole } from "@storybook/addon-console"
 import { initialize, mswDecorator } from "msw-storybook-addon"
+import { rest } from "msw"
+
+import { withConsole } from "@storybook/addon-console"
+import { addDecorator } from "@storybook/react"
 
 // Initialize MSW
 initialize()
