@@ -10,8 +10,7 @@ questions:
 # `src/components/ui/{{ inputs.name | pascal }}/index.ts`
 
 ```ts
-import { {{ inputs.name | pascal }} } from "./{{ inputs.name | pascal }}"
-export { {{ inputs.name | pascal }} }
+export { {{ inputs.name | pascal }} } from "./{{ inputs.name | pascal }}"
 ```
 
 # `src/components/ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.stories.tsx`

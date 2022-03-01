@@ -11,8 +11,7 @@ questions:
 # `src/components/model/{{ inputs.model | pascal }}/{{ inputs.component | pascal }}/index.ts`
 
 ```ts
-import { {{ inputs.component | pascal }} } from "./{{ inputs.component | pascal }}"
-export { {{ inputs.component | pascal }} }
+export { {{ inputs.component | pascal }} } from "./{{ inputs.component | pascal }}"
 ```
 
 # `src/components/model/{{ inputs.model | pascal }}/{{ inputs.component | pascal }}/{{ inputs.component | pascal }}.tsx`

@@ -1,2 +1,1 @@
-import { UserTable } from "./UserTable"
-export { UserTable }
+export { UserTable } from "./UserTable"

@@ -1,2 +1,1 @@
-import { ExLink } from "./ExLink"
-export { ExLink }
+export { ExLink } from "./ExLink"
