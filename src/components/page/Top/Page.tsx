@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-import { TopPageView } from "./View"
+import { TopPageView } from "@/components/page/Top/View"
 
 import type { NextPage } from "next"
 

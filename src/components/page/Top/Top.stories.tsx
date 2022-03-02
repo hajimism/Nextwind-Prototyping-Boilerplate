@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
-import { TopPageView } from "./View"
+import { TopPageView } from "@/components/page/Top/View"
 
 export default {
   title: "Page/Top",
