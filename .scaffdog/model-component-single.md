@@ -34,9 +34,9 @@ export const {{ inputs.component | pascal }}: VFC<{{ inputs.model | pascal }}Pro
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 import React from "react"
 
-import { mock{{ inputs.model | pascal }} } from "@/mocks/{{ inputs.model | pascal }}"
+import { {{ inputs.component | pascal }} } from "@/components/model/{{ inputs.model | pascal }}/{{ inputs.component | pascal }}"
 
-import { {{ inputs.component | pascal }} } from "./{{ inputs.component | pascal }}"
+import { mock{{ inputs.model | pascal }} } from "@/mocks/{{ inputs.model | pascal }}"
 
 export default {
   title: "Model/{{ inputs.model | pascal }}/{{ inputs.component | pascal }}",
@@ -49,6 +49,6 @@ const Template: ComponentStory<typeof {{ inputs.component | pascal }}> = (args) 
 
 export const Default = Template.bind({})
 Default.args = {
-   {{ inputs.model | camel }}: mock{{ inputs.model | pascal }},
+  {{ inputs.model | camel }}: mock{{ inputs.model | pascal }},
 }
 ```
